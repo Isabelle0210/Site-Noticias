@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', helvetica ,sans-serif; /*aqui estou falando que meu body tera essa letra*/
+    background: #fff url(fundo.png) repeat-x; /*estou pondo uma cor branca de fundo e adicionando a imagem de fundo, aplicando o repeat-x para repetir apenas na horizontal*/
+
+}
+#container{
+    width: 780px; /*estou definindo a largura do conteiner, o width junto cm o margin vai fazer centralizar*/
+    margin: 0 auto;
+}
+/*topo do site*/
+#topo {
+    height: 150px;/* definindo altura do topo do cabeçalho*/
+    background: url(detalhe-topo.png) no-repeat right top;/* definindo imagem de topo*/
+   /* border: 1px solid red;*/
+    padding-top: 25px;
+}
+.logo {
+    width: 152px;
+    height: 66px;
+    text-indent: -3000px;/* meio que empurra o conteudo*/
+    background: url(logo.png) no-repeat center ;/*deifindo a imagem da logo para n repetir centralizar ela dentro do id topo*/
+}
+/*barra de navegacao*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;/*reita as bolinhas das listas*/
+}
+/*aqui estou puxando para configurar todas as ul que estiver dentro do id topo*/
+#topo ul {
+    background: #b10333;
+    margin-top: 30px;
+    float: left;/*para fazer o background*/
+}
+/*aqui estou puxando para configurar todas as li que estiver dentro do id topo*/
+#topo ul li { 
+float: left; /*aqui elas ficam uma do lado da outra*/
+}
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;/*pedding de 0.5em inferior e superior e 1.5em nas laterais*/
+    line-height: 2.1em ; /*aumenta o tamanho da caixa*/
+    text-decoration: none;/*tira a linha que fica embaixo dos links*/
+    color: #fff;
+    background: url(divisor.png) no-repeat left center;
+}
+/* vai formatar o primeiro link para retirar a divisao colocada dele*/
+#topo ul .primeiro a {
+    background: none;
+}
+/*para mudar a cor ao passar o mouse em cima*/
+#topo ul a:hover {
+    color: #69001d;
+}
+/*seleciono a class home que esta dentro de body e apos isso selecionamos o id navegação e os links que tiverem o id home*/
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.foto #navegacao a#Fotos {
+    color: #fff;
+    background: #de003d;
+    cursor: text;
+}
+/*formatando colunas*/
+#conteudo{
+    margin-top: 60px;/*faço o container quue ira ficar o conteudo dar um espaçamento*/
+}
+#primario{
+    float: left;/*faço os conteudo flutuarem e ficarem um na frente do outro*/
+    width: 180px;/*defino a largura do conteudo*/
+    margin-right: 15px;
+}
+/*caixa da navegação lateral*/
+.caixa{
+    background: #f3f3f3 url(fundo-caixa.png);
+    margin: 10px 0px;
+    padding: 5px;
+}
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+h2{
+    font-size: 1.1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+#primario ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;/*espaçamento*/
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+#primario ul a:hover{
+    color: #a1a1a1;
+    padding-left: 20px;
+    background: #f9f9f9 url(marcador.png) no-repeat left center;
+}
+/*formularios*/
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    width: 125px;/*defino a largura da caixa de email*/
+    font-size: 0.9em;
+    background: #fff;
+}
+input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    padding: 5px;
+}
+/*conteudo destaques*/
+.entrevista img{
+    width: 100%; /*usado para deixar a imagem no tamanho da caixa*/
+    border-radius: 15px;
+}
+#lista-noticias li{
+    padding: 2px;
+    height: 70px;
+    
+}
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+    width: 80px;
+}
+#lista-noticias li a p{
+    font-size: 15px;
+}
+#lista-noticias li a{
+    text-decoration: none;
+    color: #000;
+}
+#secundario h3{
+    color: #ffffff;
+    background: #de003d;
+}
+/*conteudo entravista*/
+#lateral h3{
+    color: #000000;
+    background: #de003d;
+}
+#secundario{
+    float: left;
+    width: 270px;
+    margin-right: 15px;
+}
+#duas-colunas #lateral{
+    width: 555px;
+}
+#uma-colunas #secundario{
+    width: 750px;
+}
+#lateral {
+    width: 270px;
+    float: left;
+}
+
+/*rodape*/
+
+#container-rodape{
+    width: auto;
+    background: rgb(37, 37, 141);
+    padding: 20px;
+}
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
